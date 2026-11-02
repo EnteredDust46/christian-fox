@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Christian Fox</title>
+  <style>
+    :root {
+      --bg: #f6f3ee;
+      --ink: #1c1916;
+      --muted: #6b645c;
+      --line: #e4ddd4;
+      --accent: #8c3a2f;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.5;
+      min-height: 100vh;
+    }
+
+    .wrap {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 16px;
+      margin-bottom: 64px;
+    }
+
+    .mark {
+      font-size: 14px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    nav a {
+      color: var(--muted);
+      text-decoration: none;
+      margin-left: 20px;
+      font-family: system-ui, sans-serif;
+      font-size: 14px;
+    }
+
+    nav a:hover { color: var(--ink); }
+
+    h1 {
+      font-size: clamp(48px, 8vw, 80px);
+      font-weight: 400;
+      letter-spacing: -0.03em;
+      line-height: 0.95;
+      margin-bottom: 20px;
+    }
+
+    .lede {
+      font-family: system-ui, sans-serif;
+      font-size: 18px;
+      color: var(--muted);
+      max-width: 28em;
+      margin-bottom: 40px;
+    }
+
+    .cta {
+      display: inline-block;
+      background: var(--ink);
+      color: var(--bg);
+      text-decoration: none;
+      font-family: system-ui, sans-serif;
+      font-size: 14px;
+      padding: 12px 18px;
+      border-radius: 999px;
+    }
+
+    .cta:hover { background: var(--accent); }
+
+    section { margin-top: 80px; }
+
+    h2 {
+      font-family: system-ui, sans-serif;
+      font-size: 12px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 16px;
+    }
+
+    .card {
+      border-top: 1px solid var(--line);
+      padding: 20px 0;
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .card h3 { font-weight: 400; font-size: 22px; }
+
+    .card p {
+      font-family: system-ui, sans-serif;
+      font-size: 14px;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+
+    .year {
+      font-family: system-ui, sans-serif;
+      font-size: 13px;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+
+    footer {
+      margin-top: 80px;
+      padding-top: 16px;
+      border-top: 1px solid var(--line);
+      font-family: system-ui, sans-serif;
+      font-size: 13px;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="mark">Christian Fox</div>
+      <nav>
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Hello.<br>I’m Christian.</h1>
+      <p class="lede">A short demo page. Swap this line for a real sentence about what you do.</p>
+      <a class="cta" href="#contact">Say hello</a>
+
+      <section id="work">
+        <h2>Work</h2>
+        <article class="card">
+          <div>
+            <h3>Project one</h3>
+            <p>A placeholder for something you’ve made.</p>
+          </div>
+          <span class="year">2026</span>
+        </article>
+        <article class="card">
+          <div>
+            <h3>Project two</h3>
+            <p>Another placeholder, ready to replace.</p>
+          </div>
+          <span class="year">2025</span>
+        </article>
+        <article class="card">
+          <div>
+            <h3>Project three</h3>
+            <p>One more, so the list doesn’t look empty.</p>
+          </div>
+          <span class="year">2024</span>
+        </article>
+      </section>
+
+      <section id="about">
+        <h2>About</h2>
+        <p class="lede">A couple of sentences go here. Who you are, where you are, what you’re working on.</p>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p class="lede"><a href="mailto:hello@example.com">hello@example.com</a></p>
+      </section>
+    </main>
+
+    <footer>Demo · Christian Fox</footer>
+  </div>
+</body>
+</html>
